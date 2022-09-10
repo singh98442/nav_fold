@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto:ital,wght@1,300&display=swap');
+
+.App{
+  display: flex;
+  color: white;
+  background-color: rgb(160, 87, 160);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  /* background-color: rgb(77, 180, 187); */
+  font-family: 'DynaPuff', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blur {
+  width: 10rem;
+  height: 10rem;
+  background: rgb(149, 212, 66);
+  filter: blur(100px);
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  border-radius: 50%;
+  z-index: -20;
+
+}
+.sidebar_container{
+  height: 130vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* background-color: rgb(65, 118, 143); */
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: center; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  width: 14rem;
+  height: 85%;
+  margin: 2px 5px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+  gap: 1rem;
+  background-color: rgb(63, 52, 126);
+  backdrop-filter: blur(5.5px);
+  box-shadow: 0 8px 32px 0 rgb(114, 42, 42);
+}
+.icon_menu{
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+ 
+}
+.icon_menu>span{
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 5px;
+}
+.profile_pic{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
 }
+.profile_pic> img{
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.g-head{
+  display: flex;
+  align-self: flex-start;
+}
+.body_container{
+  flex: 1;
+  /* background-color: chocolate; */
 }
